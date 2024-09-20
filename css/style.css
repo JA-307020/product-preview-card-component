@@ -7,6 +7,8 @@
 body {
   background-color: hsl(30, 38%, 92%);
   color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+  line-height: 1.4375;
 }
 
 .container {
@@ -19,7 +21,36 @@ body {
   width: 100%;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  box-shadow: rgb(0, 0, 0) 0px 20px 25px -5px, rgb(0, 0, 0) 0px 10px 10px -5px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.card-text {
+  padding: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+.card-text .product-category {
+  text-transform: uppercase;
+  letter-spacing: 0.3125rem;
+}
+.card-text .price {
+  display: flex;
+  align-items: baseline;
+}
+.card-text .product-name, .card-text .reduced {
+  font-family: "Fraunces", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1em;
+  color: hsl(212, 21%, 14%);
+  margin: 0.75rem 0;
+}
+.card-text .reduced {
+  color: hsl(158, 36%, 37%);
+  margin: 1.125rem 1.125rem 1.125rem 0;
+}
+.card-text .original {
+  text-decoration: line-through;
 }
 
 .attribution {
